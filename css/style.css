@@ -1,0 +1,274 @@
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+                                    Principales / Body
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+p, strong, em, small, time, span {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+@media (max-width:992px) {
+    p, strong, em, small, time, span {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 2.3rem;
+    }
+    h2, h3, h4, h5, h6 {
+        font-size: 1.5rem;
+    }
+}
+.bg-primary {
+    background-color: red!important;
+}
+.c-primary {
+    color: red;
+}
+.bg-secundary {
+    background-color: rgb(7, 142, 195);
+}
+.c-secundary {
+    color: rgb(7, 142, 195);
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+                                    Header nav
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+.fixed-top {
+    transition: all .3s ease;
+}
+.fixed-top .active {
+    background-color: rgb(173, 173, 32)!important;
+}
+.sombra {
+    box-shadow: 0 -5px 25px black;
+}
+.navbar-brand span {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+a.text-light:hover {
+    color: #ffffff!important; 
+}
+a.text-light:hover {
+    color: #ffffff!important; 
+}
+.navbar .nav-link {
+    color: #ffffff!important;
+}
+.navbar .nav-link:hover {
+    text-shadow: 0 0px 10px black;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+                                    Header bg
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+.embed-responsive {
+    position: relative;
+    background: url(../img/banda.jpg) no-repeat right center / cover;
+    height: 50rem;
+}
+@media (min-width:992px) {
+    .embed-responsive {
+        background-image: none;
+        height: auto;
+        }
+}
+.embed-responsive::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top left, rgba(0, 0, 0, 0.40), rgba(255, 0, 0, 0.40));
+}
+.concierto-info {
+    z-index: 1;
+    position: absolute;
+    top: 25%;
+}
+.concierto-info h1 {
+    text-shadow: 0 0 4px red;
+}
+.concierto-info h1 span {
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: none;
+    border-radius: 30px;
+    background: radial-gradient(farthest-side at -10% -40%, rgba(255, 0, 0, 0.4) 20%, rgba(255, 255, 255, 0.6)) 50%;
+}
+.concierto-info p {
+    font-weight: 900;
+    border-radius: 30px;
+    background: radial-gradient(farthest-side at 10% -110%, rgba(255, 0, 0, 0.4) 50%, rgba(255, 255, 255, 0.6)) 50%;
+}
+.concierto-info p,
+.concierto-info h1 span {
+    box-shadow: 0 5px 10px -5px black;
+}
+.concierto-info p time,
+.concierto-info p strong {
+    font-weight: 900;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+                                    Section: La música
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+.feel-music img {
+    border: 2px red solid;
+}
+.feel-music .info-music {
+    border-top: 2px red solid;
+    border-bottom: 2px red solid;
+}
+.feel-music h2 {
+    text-shadow: 2px 1px 1px black;
+}
+.feel-music em {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.feel-music p {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+                                    Section: LineUp
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.lineup {
+    box-shadow: 0 0 30px 20px black inset;
+}
+.lineup .bg-esc1 {
+    background-color: rgb(230, 230, 43);
+}
+.lineup .bg-esc2 {
+    background-color: rgb(7, 142, 195);
+}
+.separadorGuitar::after {
+    content:"";
+    display: block;
+    height: 128px;
+    width: 300px;
+    background: url(../img/guitarra.png) no-repeat center center / 120px;
+    margin: 0 auto;
+}
+.separadorDj::after {
+    content:"";
+    display: block;
+    height: 128px;
+    width: 300px;
+    background: url(../img/dj.png) no-repeat center center / 120px;
+    margin: 0 auto;
+}
+.lineup ul li:nth-child(2n+2) {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.363) inset;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+                                    Countdown
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+.faltan {
+    box-shadow: 0 0 30px 20px black inset;
+}
+.faltan .fecha {
+    font-size: 2.8rem;
+}
+.faltan .fecha span {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+                                    Boletos
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.boletos .boletos-title {
+    font-size: 2.5rem;
+}
+.boletos .contenido,
+.boletos .contenido em {
+    font-size: 1.5rem;
+}
+.boletos .contenido .precio strong {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.boletos .contenido .active {
+    border: none;
+    background-color: rgb(173, 173, 32)!important;
+}
+.boletos .contenido .list-group-item-success {
+    border: none;
+    background-color: rgb(7, 142, 195);
+}
+.boletos .contenido {
+    box-shadow: 0 0 70px red;
+}

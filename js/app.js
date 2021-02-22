@@ -57,7 +57,7 @@ window.onscroll = (e) => {
 
 
 $(document).ready(function () { 
-    $('#fecha').countdown('2020/10/22', function(e) {
+    $('#fecha').countdown('2025/10/22', function(e) {
         $(this).html(e.strftime('<span> %D </span> Dias <span> %H </span> Horas <span> %M </span> Minutos <span> %S </span> Segundos'))
     })
 })
